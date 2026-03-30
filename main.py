@@ -63,7 +63,7 @@ print(Birthday_Data.month[0])
 
 if month_now == Birthday_Data.month[1] and day_now == Birthday_Data.day[1] and year_now == Birthday_Data.year[1]:
     with open(
-            r"letter_templates\letter_1.txt") as letter:
+            r"letter_templates/letter_1.txt") as letter:
         letter_contents = letter.read()
         # print(letter_contents)
         new_letter = letter_contents.replace("[NAME]", Birthday_Data.name[1])
