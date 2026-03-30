@@ -57,27 +57,27 @@ day_now = dt.datetime.now().day
 year_now = dt.datetime.now().year
 
 Birthday_Data = pandas.read_csv(
-    r"E:\PYCHARM\PycharmProjects\UdemyII\Email_SMTP\Birthday Wisher (Day 32) start\birthdays.csv")
+    "birthdays.csv")
 print(Birthday_Data)
 print(Birthday_Data.month[0])
 
 if month_now == Birthday_Data.month[1] and day_now == Birthday_Data.day[1] and year_now == Birthday_Data.year[1]:
     with open(
-            r"E:\PYCHARM\PycharmProjects\UdemyII\Email_SMTP\Birthday Wisher (Day 32) start\letter_templates\letter_1.txt") as letter:
+            "letter_templates\letter_1.txt") as letter:
         letter_contents = letter.read()
         # print(letter_contents)
         new_letter = letter_contents.replace("[NAME]", Birthday_Data.name[1])
         # print(new_letter)
 
     with open(
-            r"E:\PYCHARM\PycharmProjects\UdemyII\Email_SMTP\Birthday Wisher (Day 32) start\letter_templates\letter_2.txt") as letter:
+            "letter_templates\letter_2.txt") as letter:
         letter_contents = letter.read()
         # print(letter_contents)
         new_letter2 = letter_contents.replace("[NAME]", Birthday_Data.name[1])
         # print(new_letter2)
 
     with open(
-            r"E:\PYCHARM\PycharmProjects\UdemyII\Email_SMTP\Birthday Wisher (Day 32) start\letter_templates\letter_3.txt") as letter:
+            "letter_templates\letter_3.txt") as letter:
         letter_contents = letter.read()
         # print(letter_contents)
         new_letter3 = letter_contents.replace("[NAME]", Birthday_Data.name[1])
@@ -96,7 +96,7 @@ if month_now == Birthday_Data.month[1] and day_now == Birthday_Data.day[1] and y
 
 if month_now == Birthday_Data.month[2] and day_now == Birthday_Data.day[2] and year_now == Birthday_Data.year[2]:
     with open(
-            r"E:\PYCHARM\PycharmProjects\UdemyII\Email_SMTP\Birthday Wisher (Day 32) start\letter_templates\letter_1.txt") as letter:
+            "letter_templates\letter_1.txt") as letter:
         letter_contents = letter.read()
         # print(letter_contents)
         new_letter = letter_contents.replace("[NAME]", Birthday_Data.name[2])
